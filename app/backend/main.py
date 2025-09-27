@@ -3,10 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import logging
 import asyncio
 
-from app.backend.routes import api_router
-from app.backend.database.connection import engine
-from app.backend.database.models import Base
-from app.backend.services.ollama_service import ollama_service
+from routes import api_router
+from database.connection import engine
+from database.models import Base
+from services.ollama_service import ollama_service
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
